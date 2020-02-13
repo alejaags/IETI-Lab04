@@ -150,7 +150,7 @@ class NavigationDrawer extends React.Component{
                         <List>
                             <ListItem>
                                 <AccountCircleIcon/>
-                                <ListItemText primary="Estevan Vargas" secondary="bravar06@gmail.com" />
+                                <ListItemText primary="Santiago Carrillo" secondary="sancarbar@gmail.com" />
                             </ListItem>
                         </List>
                         <div className="right">
