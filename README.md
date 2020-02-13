@@ -1,6 +1,6 @@
 ![](images/react-material-heroku.png)
 
-<h1 align="center">1.3 Task Planner Project - Front End</h1>
+<h1 align="center">1.4 Task Planner Project - Front End - Part 2</h1>
 
 [![npm](https://img.shields.io/badge/npm-v6.13.4-red.svg)](https://www.npmjs.com/)
 [![npx](https://img.shields.io/badge/dependencies-npx-orange)](https://www.npmjs.com/package/npx)
@@ -9,21 +9,17 @@
 [![heroku](https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg)](https://www.heroku.com/)
 
 
-1. Create a new React JS project.
+1. Open the project created on Part 1.
 
-    ```javascript
-    npx create-react-app task-planner-app
-    ```
-2. Create the Login.js component and the CSS if needed (use Material-UI library!)
+2. Create the NewTask.js component and the corresponding CSS file if needed (use the Material-UI library!).
 
-![](images/login.png)
+![](images/new-task.png)
 
-3. Create a navigation drawer component with mocked user data (https://material-ui.com/demos/drawers/)
+3. Modify the App.js component so that it uses [BrowserRouter](https://reacttraining.com/react-router/web/example/basic) to enable the navigation from a "+" [floating action button](https://material-ui.com/components/floating-action-button/) in the main view to take the user to the *NewTask* component.
 
-![](images/navigation-drawer.png)
+4. Implement the logic to be able to connect the main view so that the new task is added to the list on the main view when the user clicks the add button.
 
-4. Create the main view that display the tasks using card layouts (https://material-ui.com/demos/cards/). 
-    This will be your model to represent a task:
+Remember the model to represent a task:
   ```javascript
        {
     	"description": "some description text ",
@@ -35,14 +31,14 @@
     	"dueDate": 156464645646
     }
 ```
+5. Implement the UserProfile.js component to update the user profile details (make sure this updates your navigationDrawer in your main view):
 
+![](images/update-profile.png)
 
-![](images/main.png)
+6. Create a [Modal](https://material-ui.com/utils/modal/) to display the options for filtering the list of tasks.
 
-5. Learn about service workers and offline support: https://codelabs.developers.google.com/codelabs/offline/#0
+![](images/add-filter.png)
 
-6. Use what you just learned to make your App work offline.
+7. Implement the logic so that the data is filtered according to the applied filters.
 
-7. Deploy your App to Heroku (https://dev.to/smithmanny/deploy-your-react-app-to-heroku-2b6f)
-
-8. Submit your github repo along with the heroku url of your solution!
+8. Transform your project into a PWA:  [task-planner-pwa](https://github.com/ieti-eci/1.5-task-planner-pwa)
